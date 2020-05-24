@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Blackboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/controllers/PizarraController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/controllers/PizarraController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/SudokuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/SudokuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Path.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +63,20 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Sudokuapp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="" />
@@ -89,5 +104,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/SudokuController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
