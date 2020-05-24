@@ -22,9 +22,10 @@
     <list default="true" id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/controllers/PizarraController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/controllers/PizarraController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/dao/PizarraDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/dao/PizarraDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/models/Pizarra.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/models/Pizarra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/utils/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/utils/Path.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Path.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +105,24 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1314" height="172" key="GridCell.Tab.0.bottom" timestamp="1590358102387">
+      <screen x="1360" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="172" key="GridCell.Tab.0.bottom/1360.0.1360.768/0.27.1360.741@1360.0.1360.768" timestamp="1590358102387" />
+    <state width="1314" height="172" key="GridCell.Tab.0.center" timestamp="1590358102387">
+      <screen x="1360" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="172" key="GridCell.Tab.0.center/1360.0.1360.768/0.27.1360.741@1360.0.1360.768" timestamp="1590358102387" />
+    <state width="1314" height="172" key="GridCell.Tab.0.left" timestamp="1590358102386">
+      <screen x="1360" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="172" key="GridCell.Tab.0.left/1360.0.1360.768/0.27.1360.741@1360.0.1360.768" timestamp="1590358102386" />
+    <state width="1314" height="172" key="GridCell.Tab.0.right" timestamp="1590358102387">
+      <screen x="1360" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="172" key="GridCell.Tab.0.right/1360.0.1360.768/0.27.1360.741@1360.0.1360.768" timestamp="1590358102387" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
