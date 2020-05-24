@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="" />
+    <list default="true" id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Pizarra/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/.factorypath" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/.factorypath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/controllers/PizarraController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/controllers/PizarraController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/dao/PizarraDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/dao/PizarraDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/models/Pizarra.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/models/Pizarra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pizarra/target/classes/utils/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pizarra/target/classes/utils/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
