@@ -1,5 +1,7 @@
 package controllers;
 
+import com.google.gson.Gson;
+import models.Blackboard;
 import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
@@ -12,6 +14,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
 public class SudokuController {
@@ -23,8 +26,8 @@ public class SudokuController {
 
     public static Route searchSolution = (Request req, Response res) ->{
         HashMap<String, Object> model = new HashMap<String, Object>();
-        //  int[] grid = req.queryParams("grid");
-        int[] grid = {
+        //  int[] bb = req.queryParams("grid");
+        int[] bb = {
                 0,8,0,5,7,6,2,0,0,
                 0,0,0,4,0,2,0,0,0,
                 0,0,0,0,3,9,5,4,8,
@@ -36,10 +39,36 @@ public class SudokuController {
                 0,4,0,0,0,0,0,0,6,
         };
 
+        Blackboard grid = new Blackboard();
+
+        grid.setGrid(bb);
+        System.out.println("Starting sudoku");
+        post(Path.Web.getBLACKBOARD()+Path.Web.getUPDATE(),grid);
+
+        while (isNotComplete(grid.grid)) {
+            grid = get(Path.Web.getBLACKBOARD()+Path.Web.getREAD());
+        }
+
+        model.put("grid",grid.grid);
+
         return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
     };
 
-    private static void post(String uri, String img) throws Exception{
+    private static boolean isNotComplete(final int[] array) {
+
+        boolean result = false;
+
+        for(int i : array){
+            if(i == 0){
+                result = true;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    private static void post(String uri, Blackboard grid) throws Exception{
         URL url = new URL(uri);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
@@ -47,17 +76,39 @@ public class SudokuController {
         connection.setRequestProperty("Accept", "application/json");
         connection.setDoOutput(true);
         try(OutputStream os = connection.getOutputStream()){
-            byte[] input = img.getBytes("utf-8");
+            String bb = new Gson().toJson(grid);
+            byte[] input = bb.getBytes(StandardCharsets.UTF_8);
             os.write(input, 0, input.length);
         }
         try(BufferedReader br = new BufferedReader(
-                new InputStreamReader(connection.getInputStream(), "utf-8"))) {
+                new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8))) {
             StringBuilder response = new StringBuilder();
-            String responseLine = null;
+            String responseLine;
             while ((responseLine = br.readLine()) != null) {
                 response.append(responseLine.trim());
             }
             System.out.println(response.toString());
         }
     }
+
+    private static Blackboard get(String uri) throws Exception {
+        Blackboard grid = new Blackboard();
+
+        URL url = new URL(uri);
+
+        HttpURLConnection connexion = (HttpURLConnection) url.openConnection();
+        connexion.setRequestMethod("GET");
+
+        BufferedReader rd = new BufferedReader(new InputStreamReader(connexion.getInputStream()));
+
+        String linea;
+
+        while ((linea = rd.readLine()) != null) {
+            grid = new Gson().fromJson(linea, Blackboard.class);
+        }
+        rd.close();
+
+        return grid;
+    }
+
 }
