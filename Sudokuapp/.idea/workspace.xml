@@ -20,13 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/SudokuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/SudokuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Blackboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Blackboard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark/template/velocity/VelocityTemplateEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark/template/velocity/VelocityTemplateEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/Path$Template.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Path$Template.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/Path$Web.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Path$Web.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BoxAgent/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BoxAgent/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BoxAgent/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BoxAgent/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BoxAgent/target/classes/models/Blackboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BoxAgent/target/classes/models/Blackboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BoxAgent/target/classes/utils/HTTPMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BoxAgent/target/classes/utils/HTTPMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BoxAgent/target/classes/utils/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BoxAgent/target/classes/utils/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ColumnAgent/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ColumnAgent/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ColumnAgent/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ColumnAgent/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ColumnAgent/target/classes/models/Blackboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ColumnAgent/target/classes/models/Blackboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ColumnAgent/target/classes/utils/HTTPMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ColumnAgent/target/classes/utils/HTTPMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ColumnAgent/target/classes/utils/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ColumnAgent/target/classes/utils/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RowAgent/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RowAgent/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RowAgent/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RowAgent/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RowAgent/target/classes/models/Blackboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RowAgent/target/classes/models/Blackboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RowAgent/target/classes/utils/HTTPMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RowAgent/target/classes/utils/HTTPMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RowAgent/target/classes/utils/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RowAgent/target/classes/utils/Path.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
