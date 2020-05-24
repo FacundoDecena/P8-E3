@@ -67,11 +67,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62dc5ce5-a859-4870-81ea-d847e91ddf03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sudokuapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spark/template/velocity/VelocityTemplateEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../camara/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../camara/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/SudokuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1cMt0tGA103wtQlGrdU0yL2ubWp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -101,6 +99,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="TaskManager">
@@ -112,6 +111,7 @@
       <updated>1590350069922</updated>
       <workItem from="1590350073317" duration="352000" />
       <workItem from="1590350428467" duration="54000" />
+      <workItem from="1590350505542" duration="885000" />
     </task>
     <servers />
   </component>
