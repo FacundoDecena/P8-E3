@@ -39,7 +39,7 @@ public class Main {
 
     private static boolean isComplete(Blackboard blackboard){
         int[] grid = blackboard.getGrid();
-        for(int i:grid){
+        for(int i=0;i<grid.length;i++){
             if(grid[i] == 0){
                 return false;
             }
