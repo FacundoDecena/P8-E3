@@ -58,7 +58,7 @@ public class SudokuController {
                 3,0,8,7,0,0,0,2,5,
                 0,4,0,0,0,0,0,0,6,
         };
-/*
+
         Blackboard grid = new Blackboard();
         
         grid.setGrid(bb);
@@ -68,8 +68,8 @@ public class SudokuController {
         while (isNotComplete(grid.grid)) {
             grid = get(Path.Web.getBLACKBOARD()+Path.Web.getREAD());
         }
-*/
-        model.put("grid",bb);
+
+        model.put("grid",grid.grid);
         model.put("opcion", "searchSolution");
         model.put("template", Path.Template.HOME);
         return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
