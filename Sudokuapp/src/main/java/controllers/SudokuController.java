@@ -70,7 +70,8 @@ public class SudokuController {
         }
         System.out.println(grid);
         model.put("grid",grid.grid);
-        model.put("opcion", "seachSolution");
+        model.put("opcion", "searchSolution");
+        model.put("template", Path.Template.HOME);
         return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
     };
 
