@@ -14,8 +14,9 @@
                         #else
                         <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value=" " disabled="true">
                         #end
-                    #else
+                    #elseif ($opcion=="searchSolution")
                         <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value="$grid[$cont]" disabled="true">
+                    #else
                     #end
                 </td>
                 #set ($cont=$cont+1)
