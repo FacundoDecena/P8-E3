@@ -1,0 +1,31 @@
+<div class="col-md-12">
+#set ($cont=0)
+    <form method="get" action="">
+        <table style="border: black 1px solid;border-collapse: collapse;">
+            #foreach ($fila in [1..9])
+            <tr>
+                #foreach ($columna in [1..9])
+                <td style="border: black 1px solid;width:2rem;">
+                    #if ($opcion=="home")
+                    <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" min="1" min="9">
+                    #elseif ($opcion=="init")
+                        #if ($arreglo[$cont]!=0)
+                        <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value="$arreglo[$cont]" disabled="true">
+                        #else
+                        <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value=" " disabled="true">
+                        #end
+                    #else
+                        <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value="$grid[$cont]" disabled="true">
+                    #end
+                </td>
+                #set ($cont=$cont+1)
+                #end
+            </tr>
+            #end
+        </table>
+        <br>
+        <button type="submit" class="btn btn-primary" onclick=this.form.action="/init">Inicializar</button>
+        <br><br>
+        <button type="submit" class="btn btn-success" onclick=this.form.action="/solve">Buscar solucion</button>
+    </form>
+</div>

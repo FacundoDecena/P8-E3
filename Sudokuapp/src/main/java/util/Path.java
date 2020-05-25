@@ -5,6 +5,7 @@ import lombok.Getter;
 public class Path {
     public static class Web{
         @Getter public static final String HOME = "home";
+        @Getter public static final String INIT = "init";
         @Getter public static final String SOLVE = "solve";
         @Getter public static final String BLACKBOARD = "http://localhost:8888/";
         @Getter public static final String UPDATE = "update";
@@ -13,5 +14,6 @@ public class Path {
 
     public static class Template {
         public final static String LAYOUT = "templates/layout.vtl";
+        public final static String HOME = "templates/sudoku.vtl";
     }
 }

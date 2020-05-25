@@ -20,7 +20,27 @@ import java.util.HashMap;
 public class SudokuController {
     public static Route home = (Request req, Response res) ->{
         HashMap<String, Object> model = new HashMap<String, Object>();
-
+        model.put("opcion", "home");
+        model.put("template", Path.Template.HOME);
+        return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
+    };
+    
+    public static Route init = (Request req, Response res) ->{
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        int[] bb = {
+                0,8,0,5,7,6,2,0,0,
+                0,0,0,4,0,2,0,0,0,
+                0,0,0,0,3,9,5,4,8,
+                6,3,0,9,0,0,8,5,2,
+                0,9,0,2,0,0,3,7,0,
+                8,0,0,0,5,0,6,9,4,
+                2,5,7,6,0,3,4,8,9,
+                3,0,8,7,0,0,0,2,5,
+                0,4,0,0,0,0,0,0,6,
+        };
+        model.put("opcion", "init");
+        model.put("arreglo",bb);
+        model.put("template", Path.Template.HOME);
         return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
     };
 
@@ -40,7 +60,7 @@ public class SudokuController {
         };
 
         Blackboard grid = new Blackboard();
-
+        
         grid.setGrid(bb);
         System.out.println("Starting sudoku");
         post(Path.Web.getBLACKBOARD()+Path.Web.getUPDATE(),grid);
@@ -50,7 +70,7 @@ public class SudokuController {
         }
 
         model.put("grid",grid.grid);
-
+        model.put("opcion", "seachSolution");
         return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
     };
 
