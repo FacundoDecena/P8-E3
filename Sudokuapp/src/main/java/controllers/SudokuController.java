@@ -64,11 +64,11 @@ public class SudokuController {
         grid.setGrid(bb);
         System.out.println("Starting sudoku");
         post(Path.Web.getBLACKBOARD()+Path.Web.getUPDATE(),grid);
-
+        System.out.println(grid);
         while (isNotComplete(grid.grid)) {
             grid = get(Path.Web.getBLACKBOARD()+Path.Web.getREAD());
         }
-
+        System.out.println(grid);
         model.put("grid",grid.grid);
         model.put("opcion", "seachSolution");
         return new VelocityTemplateEngine().render(new ModelAndView(model, Path.Template.LAYOUT));
