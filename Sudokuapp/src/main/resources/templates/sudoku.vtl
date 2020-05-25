@@ -7,12 +7,12 @@
                 #foreach ($columna in [1..9])
                 <td style="border: black 1px solid;width:2rem;">
                     #if ($opcion=="home")
-                    <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" min="1" min="9">
+                    <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" min="1" max="9">
                     #elseif ($opcion=="init")
                         #if ($arreglo[$cont]!=0)
                         <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value="$arreglo[$cont]" disabled="true">
                         #else
-                        <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value=" " disabled="true">
+                        <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" min="1" max="9">
                         #end
                     #elseif ($opcion=="searchSolution")
                         <input type="number" style="width: 2rem;margin:0px; padding: 0px;border-style: none;" value="$grid[$cont]" disabled="true">
